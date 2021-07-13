@@ -173,6 +173,7 @@ table {
 }
 
 /* ========END RESET CSS ==========*/
+/* ========MAIN CSS ==========*/
 * {
   box-sizing: border-box;
 }
@@ -260,7 +261,9 @@ button {
   color: var(--light-color);
   background-color: #d52047;
 } */
+/* ======== END MAIN CSS ==========*/
 
+/* ========START  HEADER CSS ==========*/
 .header {
   color: var(--light-color);
   padding: 50px 0;
@@ -352,12 +355,22 @@ h1 {
   background-color: transparent;
   color: var(--light-color);
 }
-.video-container{
+/* ======== END HEADER CSS ==========*/
+
+/* ======= VIDEO SECTION ======= */
+
+
+.video-section{
   display: flex;
-  flex-direction: column;
+
 }
-.head-text{
+.video-section-texts{
   width: 445px;
+  display: flex;
+ flex-direction:column;
+}
+
+.video-section-texts-title{
   font-size:36px;
   font-weight:600;
   line-height: 1.5;
@@ -365,8 +378,7 @@ h1 {
   
 }
 
-.content-text{
-  width: 445px;
+.video-section-texts-description{
   font-size:14px;
   font-weight:400;
   line-height: 1.5;
@@ -374,14 +386,35 @@ h1 {
   text-align: justify;
 }
 
-.learn-more{
-  color:#ccc;
+.video-section-link{
+  color:hsl(var(--primary-hue), 74%, 48%);
   margin: 16px 0 110px 0;
 }
 
-
-.video-button{
-  border-radius: 50%;
+.video-content{
+  
+  margin-top: 94px;
+}
+.video-button {
+  padding-top: 66px;
   width: 66px;
-  background-color: hsla(var(--primary-hue), 74%, 48%, 0.8);
+  border-radius: 50%;
+  background-color:hsl(var(--primary-hue), 74%, 48%);
+  
+}
+
+
+.feature-section{
+  width: 100%;
+  background-color: #fafafa;
+}
+.section-title{
+  font-size: 36px;
+  text-align: center;
+}
+.feature-img{
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  margin-top: 63px;
 }
