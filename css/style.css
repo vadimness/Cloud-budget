@@ -381,7 +381,9 @@ h1 {
 
 
 .video-button{
+  display: flex;
   border-radius: 50%;
   width: 66px;
-  background-color: hsla(var(--primary-hue), 74%, 48%, 0.8);
+  height: 66px;
+  background-color:red;
 }
