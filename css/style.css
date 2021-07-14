@@ -362,6 +362,7 @@ h1 {
 
 .video-section{
   display: flex;
+  width: 100%;
 
 }
 .video-section-texts{
@@ -403,6 +404,7 @@ h1 {
   
 }
 
+/* ======= FEATURE SECTION ======= */
 
 .feature-section{
   width: 100%;
@@ -411,10 +413,41 @@ h1 {
 .section-title{
   font-size: 36px;
   text-align: center;
+  padding-top: 63px;
 }
 .feature-img{
   display: flex;
   margin: auto;
   justify-content: space-between;
-  margin-top: 63px;
+ padding-top: 63px;
+}
+.cards-content{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 293px;
+  background-color:var(--light-color);
+  margin-top: -100px;
+  border-radius: 8px;
+  padding: 33px 25px;
+  box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+}
+.cards-title{
+font-size: 18px;
+font-weight: 700;
+line-height:1.2;
+text-align: center;
+}
+.cards-text{
+font-size: 12px;
+font-weight: 400;
+line-height:1.5;
+width: 229px;
+padding-top: 20px;
+text-align: center;
+}
+.cards-text-bottom{
+  color:hsl(var(--primary-hue), 74%, 48%);
+  padding-top: 23px;
+  justify-content: center;
 }
