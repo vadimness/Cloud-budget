@@ -362,7 +362,8 @@ h1 {
 
 .video-section{
   display: flex;
-  width: 100%;
+  justify-content: space-between;
+  
 
 }
 .video-section-texts{
@@ -392,77 +393,81 @@ h1 {
   margin: 16px 0 110px 0;
 }
 
+.video-box{
+
+  position: relative;
+}
 .video-content{
-  
-  margin-top: 94px;
+    padding: 95px 0;
 }
 
-.play-button{
-font-family: Segoe MDL2 Assets;
-font-style: normal;
-font-weight: normal;
-font-size: 18px;
-line-height: 18px;}
 
-.video-button {
-  padding-top: 66px;
+.video-btn {
   width: 66px;
+  height: 66px;
   border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   background-color:hsl(var(--primary-hue), 74%, 48%);
-  
+  color: var(--light-color);
+  position: absolute;
+  top:50%;
+  left: 0;
+  transform: translate(-50%, -50%); 
+
 }
 
 /* ======= FEATURE SECTION ======= */
 
 .feature-section{
   width: 100%;
+  padding: 63px 0 124px;
   background-color: #fafafa;
 }
 .section-title{
   font-size: 36px;
+  font-weight: 600;
+  color: var(--dark-color);
   text-align: center;
-  padding-top: 63px;
 }
-.card-header {
-  z-index: 1;
+.img-feature{
+display: flex;
+justify-content: space-between;
+padding-top: 63px;
 }
-.cards-header img{
-  object-fit: cover;
+.img-header{
   width: 100%;
+  border-radius: 8px;
 }
-.feature-img{
-  display: flex;
-  margin: auto;
-  justify-content: space-between;
- padding-top: 63px;
-}
-.cards-content{
+.img-content{
   display: flex;
   flex-direction: column;
+  align-items: center;
+  position: relative;
   width: 293px;
-  position: absolute;
   background-color:var(--light-color);
-  margin-top: -100px;
+  margin:-99px auto 0;
   border-radius: 8px;
-  padding: 33px 25px;
+  padding: 33px 0 25px 0;
   box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding:32px ;
 }
-.cards-title{
+.img-title{
 font-size: 18px;
 font-weight: 700;
 line-height:1.2;
 text-align: center;
 }
-.cards-text{
+.img-text{
 font-size: 12px;
 font-weight: 400;
 line-height:1.5;
-width: 229px;
 padding-top: 20px;
 text-align: center;
-z-index: 10;
 }
-.cards-text-bottom{
+.img-text-btn{
   color:hsl(var(--primary-hue), 74%, 48%);
   padding-top: 23px;
   justify-content: center;

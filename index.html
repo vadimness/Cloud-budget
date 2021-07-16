@@ -6,6 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+    integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+  <script async src="./js/modernizr-custom.js"></script>
   <title>Landing page</title>
 </head>
 
@@ -53,10 +56,12 @@
         <a href="/" class="video-section-link">Learn more</a>
       </div>
       <div class="video-box">
-        <div class="video-content">
-     <div class="play-button">
-        </div>
-        <button class="video-button"></button>
+        <picture>
+          <source srcset="./img/Video_bg.webp" type="image/webp">
+          <source srcset="./img/Video_bg.png" type="image/png">
+          <img src="./img/Video_bg.png" class="video-content" alt="people in room">
+        </picture>
+        <button class="video-btn"><i class="fas fa-play"></i></button>
       </div>
   </div>
   </section>
@@ -64,40 +69,99 @@
   <div class="container">
     <section class="feature-section">
       <div class="section-title">Features</div>
-      <div class="feature-img">
-        <div class="cards">
-          <div class="cards-header">
-            <img src="./img/hand-money.png" alt="hand-mobile">
-          </div>
-          <div class="cards-content">
-            <h3 class="cards-title">Supports All Currencies and Cards</h3>
-            <p class="cards-text">We support all popular currencies and is fully customizable to add</p>
-            <a href="#" class="cards-text-bottom">Read More</a>
-          </div>
-        </div>
-        <div class="cards">
-          <div class="cards-header">
-            <img src="./img/hand-mobile.png" alt="hand-mobile">
-          </div>
-          <div class="cards-content">
-            <h3 class="cards-title">Manage your expenses on the go</h3>
-            <p class="cards-text">You can access your account from anywhere in the world on any device</p>
-            <a href="#" class="cards-text-bottom">Read More</a>
+      <div class="img-feature">
+        <div class="img">
+          <picture>
+            <source srcset="./img/hand-money.webp" type="image/webp" />
+            <source src="./img/hand-money.png" type="image/png" />
+            <img class="img-header" src="./img/hand-money.png" alt="hands money"/>
+          </picture>
+          <div class="img-content">
+            <h3 class="img-title">Supports All Currencies and Cards</h3>
+            <p class="img-text">We support all popular currencies and is fully customizable to add</p>
+            <a href="#" class="img-text-btn">Read More</a>
           </div>
         </div>
-
-        <div class="cards">
-          <div class="cards-header">
-            <img src="./img/Cloud-b.png" alt="cloud">
+        <div class="img">
+          <picture>
+            <source srcset="./img/hand-mobile.webp" type="image/webp" />
+            <source src="./img/hand-mobile.png" type="image/png" />
+            <img class="img-header" src="./img/hand-mobile.png" alt="hands money"/>
+          </picture>
+          <div class="img-content">
+            <h3 class="img-title">Manage your expenses on the go</h3>
+            <p class="img-text">You can access your account from anywhere in the world on any device</p>
+            <a href="#" class="img-text-btn">Read More</a>
           </div>
-          <div class="cards-content">
-            <h3 class="cards-title">Cloud Budget Management Software</h3>
-            <p class="cards-text">Our software is made so you can access and manage your budget</p>
-            <a href="#" class="cards-text-bottom">Read More</a>
+        </div>
+        <div class="img">
+          <picture>
+            <source srcset="./img/storage.webp" type="image/webp" />
+            <source src="./img/storage.png" type="image/png" />
+            <img class="img-header" src="./img/storage.png" alt="hands money"/>
+          </picture>
+          <div class="img-content">
+            <h3 class="img-title">Cloud Budget Management Software</h3>
+            <p class="img-text">Our software is made so you can access and manage your budget</p>
+            <a href="#" class="img-text-btn">Read More</a>
           </div>
         </div>
     </section>
+    <div class="container">
+      <section class="technology">
+        <div class="section-title">Technology</div>
+        <div class="technology-section">
+          <div class="number">
+            <picture>
+              <source srcset="./img/hand-money.webp" type="image/webp" />
+              <source src="./img/hand-money.png" type="image/png" />
+              <img class="img-header" src="./img/hand-money.png" alt="hands money"/>
+            </picture>
+            <div class="img-content">
+              <h3 class="img-title">Supports All Currencies and Cards</h3>
+              <p class="img-text">We support all popular currencies and is fully customizable to add</p>
+              <a href="#" class="img-text-btn">Read More</a>
+            </div>
+          </div>
+          <div class="img">
+            <picture>
+              <source srcset="./img/hand-mobile.webp" type="image/webp" />
+              <source src="./img/hand-mobile.png" type="image/png" />
+              <img class="img-header" src="./img/hand-mobile.png" alt="hands money"/>
+            </picture>
+            <div class="img-content">
+              <h3 class="img-title">Manage your expenses on the go</h3>
+              <p class="img-text">You can access your account from anywhere in the world on any device</p>
+              <a href="#" class="img-text-btn">Read More</a>
+            </div>
+          </div>
+          <div class="img">
+            <picture>
+              <source srcset="./img/storage.webp" type="image/webp" />
+              <source src="./img/storage.png" type="image/png" />
+              <img class="img-header" src="./img/storage.png" alt="hands money"/>
+            </picture>
+            <div class="img-content">
+              <h3 class="img-title">Cloud Budget Management Software</h3>
+              <p class="img-text">Our software is made so you can access and manage your budget</p>
+              <a href="#" class="img-text-btn">Read More</a>
+            </div>
+          </div>
+          <div class="img">
+            <picture>
+              <source srcset="./img/hand-money.webp" type="image/webp" />
+              <source src="./img/hand-money.png" type="image/png" />
+              <img class="img-header" src="./img/hand-money.png" alt="hands money"/>
+            </picture>
+            <div class="img-content">
+              <h3 class="img-title">Supports All Currencies and Cards</h3>
+              <p class="img-text">We support all popular currencies and is fully customizable to add</p>
+              <a href="#" class="img-text-btn">Read More</a>
+            </div>
+          </div>
+      </section>
   </div>
-    <footer></footer>
-  </body>
+  <footer></footer>
+</body>
+
 </html>
