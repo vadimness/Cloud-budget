@@ -619,3 +619,33 @@ h1 {
   width: 445px;
   height: auto;
 }
+
+.footer{
+  padding:85px 0px;
+  background-color: #fafafa;
+  width: 100%;
+}
+.footer-details{
+  display: flex;
+  justify-content: space-between;
+ 
+} 
+
+.footer-info{
+width: 254px;
+}
+.footer-title{
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--dark-color);
+}
+.footer-info-text{
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--dark-color);
+  padding-top: 33px;
+}
+.copyright{
+  margin-top: 141px;
+}
