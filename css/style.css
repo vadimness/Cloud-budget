@@ -193,7 +193,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 14px;
-  padding-bottom: 2000px;
 }
 a {
   display: inline-flex;
@@ -661,6 +660,7 @@ h1 {
   padding: 85px 0px;
   background-color: #fafafa;
   width: 100%;
+  bottom: 0;
 }
 .footer-details {
   display: flex;
@@ -668,9 +668,10 @@ h1 {
 }
 
 .footer-info {
-  width: 254px;
-  display: flex;
-  flex-direction: column;
+ width: 254px;
+ height: 114px;
+ display: flex;
+ flex-direction: column;
 }
 .social{
   display: inline-flex;
@@ -682,13 +683,14 @@ h1 {
   font-weight: 700;
   line-height: 1.2;
   color: var(--dark-color);
+  padding-bottom: 33px;
 }
 .footer-info-text {
   font-size: 12px;
   line-height: 1.5;
   color: var(--dark-color);
-  padding-top: 33px;
+  padding-bottom: 10px;
 }
 .copyright {
-  margin-top: 141px;
+  padding-top: 141px;
 }
