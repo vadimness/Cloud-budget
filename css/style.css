@@ -272,11 +272,16 @@ button {
   top: 0;
   width: 100%;
 }
-
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.logo{
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.2;
 }
 .nav {
   display: flex;
@@ -528,59 +533,6 @@ h1 {
   margin-top: -55px;
 }
 
-/* .swiper-container.test-slider{
-  width: 500px;
-  padding: 50px 0;
-}
-.test-slider img{
-  width: 100%;
-  height: auto;
-}
-.test-slider .swiper-slide{
-  transition: 0.3s;
-}
-.test-slider .swiper-slide-active{
-  transform: scale(1.2);
-}
- */
-
-/* XX-Large devices (larger desktops) */
-/* No media query since the xxl breakpoint has no upper bound on its width */
-/* X-Large devices (large desktops, less than 1400px) */
-@media (max-width: 1399.98px) {
-}
-/* Large devices (desktops, less than 1200px) */
-@media (max-width: 1199.98px) {
-  .container {
-    max-width: 960px;
-  }
-  .img {
-    width: 300px;
-  }
-  .img-content {
-    padding: 25px;
-  }
-}
-/* Medium devices (tablets, less than 992px) */
-@media (max-width: 991.98px) {
-  .container {
-    max-width: 720px;
-  }
-}
-/* Small devices (landscape phones, less than 768px) */
-@media (max-width: 767.98px) {
-  .container {
-    max-width: 540px;
-  }
-}
-/* X-Small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) {
-  .container {
-    max-width: 100%;
-    padding: 0 15px;
-  }
-}
-
 /* ======= APPLICATION SECTION ======= */
 
 .app-section {
@@ -593,7 +545,7 @@ h1 {
   justify-content: space-between;
   align-items: center;
 }
-.app-text {
+.wrap-text {
   width: 445px;
   display: flex;
   flex-direction: column;
@@ -656,11 +608,38 @@ h1 {
   transform: scale(1);
 }
 
+.form-section {
+  padding: 117px 0 123px;
+}
+.form-section-wrap{
+  display: flex;
+  justify-content: space-between;
+}
+.form {
+  width: 540px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.wrap-text{
+  width: 445px;
+}
+.standart-field {
+  width: 100%;
+}
+.short-field {
+  width: calc((100% - 30px) / 2);
+}
+input, select {
+  padding: 17px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
 .footer {
-  padding: 85px 0px;
+  padding: 85px 0 85px;
   background-color: #fafafa;
   width: 100%;
-  bottom: 0;
 }
 .footer-details {
   display: flex;
@@ -678,6 +657,9 @@ h1 {
   justify-content: space-between;
   width: 66px;
 }
+.footer-icons{
+  font-size: 14px;
+}
 .footer-title {
   font-size: 18px;
   font-weight: 700;
@@ -691,6 +673,74 @@ h1 {
   color: var(--dark-color);
   padding-bottom: 10px;
 }
-.copyright {
-  padding-top: 141px;
+.copyright-section{
+  width: 100%;
+  font-size: 12px;
+  background-color: #fafafa;
+  padding-bottom: 86px;
+}
+
+
+
+/* .swiper-container.test-slider{
+  width: 500px;
+  padding: 50px 0;
+}
+.test-slider img{
+  width: 100%;
+  height: auto;
+}
+.test-slider .swiper-slide{
+  transition: 0.3s;
+}
+.test-slider .swiper-slide-active{
+  transform: scale(1.2);
+}
+ */
+
+/* XX-Large devices (larger desktops) */
+/* No media query since the xxl breakpoint has no upper bound on its width */
+/* X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+}
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+  .container {
+    max-width: 960px;
+  }
+  .img {
+    width: 300px;
+  }
+  .img-content {
+    padding: 25px;
+  }
+  .wrap-text{
+    width: 400px;
+  }
+}
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+  .container {
+    max-width: 720px;
+  }
+  .logo {
+    width: 100%;
+    justify-content: center;
+  }
+  .copyright-section{
+    padding-bottom: 15px;
+  }
+}
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  .container {
+    max-width: 540px;
+  }
+}
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .container {
+    max-width: 100%;
+    padding: 0 15px;
+  }
 }
