@@ -721,20 +721,38 @@ input, select {
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
   .container {
-    max-width: 720px;
+  max-width: 720px;
   }
+  /* header */
   .logo {
-    width: 100%;
-    justify-content: center;
+  width: 100%;
+  justify-content: center;
+  padding-bottom: 20px;
+  }
+  .navbar{
+  flex-direction: column;
+  }
+  /* about section */
+  .about-text{
+  width: 300px;
+  }
+  .video-box{
+  width: 350px;
+  }
+  .about-text-title{
+    font-size: 24px;
   }
   .copyright-section{
-    padding-bottom: 15px;
-  }
+  padding-bottom: 15px;
+  } 
 }
+
+
+
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
   .container {
-    max-width: 540px;
+  max-width: 540px;
   }
 }
 /* X-Small devices (portrait phones, less than 576px) */
