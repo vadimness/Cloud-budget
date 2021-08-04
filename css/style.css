@@ -334,7 +334,7 @@ button {
   align-items: center;
 }
 
-h1 {
+.hero-title{
   font-size: 72px;
   font-weight: 700;
   line-height: 1.2;
@@ -732,16 +732,48 @@ input, select {
   .navbar{
   flex-direction: column;
   }
-  /* about section */
-  .about-text{
-  width: 300px;
+  .btn-sm{
+  padding:8px 14px;
   }
-  .video-box{
-  width: 350px;
+  .hero{
+   padding-bottom: 100px;  
+  } 
+  .hero-title{
+  font-size: 48px;
+  }
+  .hero-text{
+    font-size: 16px;
+  }
+  .hero-btn{
+    padding: 10px 35px;
+  }
+  /* about section */
+  .about{
+    padding: 50px 0;
   }
   .about-text-title{
     font-size: 24px;
   }
+  .about-text{
+  width: 300px;
+  }
+  .video-btn {
+  width: 50px;
+  height: 50px;
+}
+  .video-box{
+  width: 350px;
+  }
+  .video-content {
+  width: 400px;
+}
+/* Features */
+.feature-section {
+padding: 50px 0 70px;
+}
+.img-feature {
+padding-top: 50px;
+}
   .copyright-section{
   padding-bottom: 15px;
   } 
@@ -753,6 +785,9 @@ input, select {
 @media (max-width: 767.98px) {
   .container {
   max-width: 540px;
+  }
+  ul.nav{
+    font-size: 12px;
   }
 }
 /* X-Small devices (portrait phones, less than 576px) */
