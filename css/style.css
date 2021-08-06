@@ -787,20 +787,50 @@ padding: 50px 0 70px;
 font-size: 70px;
 }
 .technology-img {
-  width: 40px;
-  height: 40px;}
+width: 40px;
+height: 40px;}
 
-  /* Application */
-
-  .app-text-title {
-    font-size: 24px;}
-.copyright-section{
-padding-bottom: 15px;
-  } 
+/* Application */
+.app-section{
+  padding: 50px 0 70px;
+}
+.app-text-title {
+font-size: 24px;
+}
+.wrap-text {
+  width: 340px;
+}
+.app-links{
+  width: 24px;
+  height: 24px;
+}
+.swiper-container.app-slider{
+  width: 360px;
 }
 
-
-
+/* FORM */
+.form-section{
+padding: 50px 0 70px;
+}
+.about-text-description {
+font-size: 12px;
+}
+.form {
+width: 340px;
+gap:20px
+}
+.short-field {
+width: calc((100% - 20px) / 2);}
+.btn{
+padding: 11px 36px;
+}
+/* Footer */
+.footer-info-text {
+  font-size: 11px;}
+.copyright-section {
+padding-bottom: 25px;
+}
+}
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
   .container {
