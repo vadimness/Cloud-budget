@@ -223,6 +223,15 @@ button {
   max-width: 1110px;
   margin: 0 auto;
 }
+.more-link{
+  color: hsl(var(--primary-hue), 74%, 48%);
+  margin-top: 16px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+.more-link:hover{
+text-shadow: 0 0.32px 0, 0 0.32px 0, 0.32px 0 0, 0.32px 0 0; 
+}
 .btn {
   border-radius: 6px;
   text-transform: uppercase;
@@ -286,11 +295,14 @@ button {
   align-items: center;
   justify-content: space-between;
 }
-.logo {
-  font-size: 18px;
+.logo-header{
+  font-size:18px;
   font-weight: 700;
   text-transform: uppercase;
   line-height: 1.2;
+}
+.logo-icon{
+margin-right: 9px;
 }
 .nav {
   display: flex;
@@ -373,7 +385,6 @@ button {
   background-color: transparent;
   color: var(--light-color);
 }
-/* ======== END HEADER CSS ==========*/
 
 /* ======= ABOUT SECTION ======= */
 .about {
@@ -402,12 +413,17 @@ button {
   margin-top: 46px;
   text-align: justify;
 }
-
-.about-link {
-  color: hsl(var(--primary-hue), 74%, 48%);
-  margin-top: 16px;
+.fab {
+  font-size: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin: 16px 13px 16px 0;
+  color: var(--light-color);
 }
 
+.fab:hover {
+  transform: scale(1.1);
+}
 .video-box {
   position: relative;
 }
@@ -694,27 +710,6 @@ select {
   padding-bottom: 86px;
 }
 
-/* .swiper-container.test-slider{
-  width: 500px;
-  padding: 50px 0;
-}
-.test-slider img{
-  width: 100%;
-  height: auto;
-}
-.test-slider .swiper-slide{
-  transition: 0.3s;
-}
-.test-slider .swiper-slide-active{
-  transform: scale(1.2);
-}
- */
-
-/* XX-Large devices (larger desktops) */
-/* No media query since the xxl breakpoint has no upper bound on its width */
-/* X-Large devices (large desktops, less than 1400px) */
-@media (max-width: 1399.98px) {
-}
 /* Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
   .container {
