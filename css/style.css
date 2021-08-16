@@ -1,3 +1,4 @@
+
 /* latin-ext */
 @font-face {
   font-family: "Lato";
@@ -302,7 +303,7 @@ text-shadow: 0 0.32px 0, 0 0.32px 0, 0.32px 0 0, 0.32px 0 0;
   line-height: 1.2;
 }
 .logo-icon{
-margin-right: 9px;
+margin-right: 6px;
 }
 .nav {
   display: flex;
@@ -375,10 +376,7 @@ margin-right: 9px;
   line-height: 1.5;
   text-align: center;
   margin-top: 40px;
-}
-
-.hero-btn {
-  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .sign_up-btn:hover {
@@ -665,6 +663,7 @@ select {
   border: 1px solid #ccc;
   border-radius: 6px;
 }
+/* ====Footer==== */
 
 .footer {
   padding: 85px 0 85px;
@@ -675,10 +674,10 @@ select {
   display: flex;
   justify-content: space-between;
 }
-
+.footer-adress{
+width:170px;
+}
 .footer-info {
-  width: 254px;
-  height: 114px;
   display: flex;
   flex-direction: column;
 }
@@ -698,11 +697,18 @@ select {
   padding-bottom: 33px;
 }
 .footer-info-text {
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.5;
   color: var(--dark-color);
-  padding-bottom: 10px;
 }
+.footer-icons .fab{
+  font-size: 14px;
+  color: var(--dark-color);
+}
+.footer-icons .fab:hover{
+  color: hsla(var(--primary-hue), 74%, 48%, 0.8);
+  text-shadow: 0 0.32px 0, 0 0.32px 0, 0.32px 0 0, 0.32px 0 0; 
+  }
 .copyright-section {
   width: 100%;
   font-size: 12px;
@@ -734,52 +740,56 @@ select {
   .logo {
     width: 100%;
     justify-content: center;
-    padding-bottom: 20px;
+  }
+  .logo-header{
+  margin-bottom: 20px;
   }
   .navbar {
-    flex-direction: column;
-  }
-  .btn-sm {
-    padding: 8px 14px;
-  }
-  .hero {
-    padding-bottom: 100px;
-  }
+  flex-direction: column;
+  } 
   .hero-title {
-    font-size: 48px;
+    font-size: 50px;
   }
   .hero-text {
-    font-size: 16px;
+    font-size: 18px;
   }
-  .hero-btn {
-    padding: 10px 35px;
-  }
+.btn-sm{
+  padding: 9px 16px;
+  margin-top: 10px;
+}
+.hero-btn{
+  padding: 15px 35px;
+}
   /* about section */
   .about {
     padding: 50px 0;
   }
   .about-text-title {
-    font-size: 24px;
+    font-size: 22px;
   }
   .about-text {
-    width: 300px;
+    width: 325px;
   }
+  .about-text-description{
+    font-size: 13px;
+    margin-top: 37px;
+  }
+.more-link {
+font-size: 12px;  
+}
   .video-btn {
     width: 50px;
     height: 50px;
   }
-  .video-box {
-    width: 350px;
-  }
   .video-content {
-    width: 400px;
+    width: 325px;
   }
   /* Features */
   .feature-section {
     padding: 50px 0 70px;
   }
   .section-title {
-    font-size: 24px;
+    font-size: 28px;
   }
   .img {
     width: 230px;
@@ -801,7 +811,7 @@ select {
 
   /* Application */
   .app-section {
-    padding: 50px 0 70px;
+    padding: 50px 0 50px;
   }
   .app-text-title {
     font-size: 24px;
@@ -814,16 +824,17 @@ select {
     height: 24px;
   }
   .swiper-container.app-slider {
-    width: 360px;
-  }
-
+  width: 340px;
+  height: 280px;
+  } 
   /* FORM */
+
   .form-section {
     padding: 50px 0 70px;
   }
-  .about-text-description {
+  /* .about-text-description {
     font-size: 12px;
-  }
+  } */
   .form {
     width: 340px;
     gap: 20px;
@@ -831,12 +842,12 @@ select {
   .short-field {
     width: calc((100% - 20px) / 2);
   }
-  .btn {
-    padding: 11px 36px;
-  }
+ .btn-primary{
+   padding: 15px 15px;
+ }
   /* Footer */
   .footer-info-text {
-    font-size: 11px;
+    font-size: 12px;
   }
   .copyright-section {
     padding-bottom: 25px;
@@ -849,19 +860,24 @@ select {
   }
   .container {
     max-width: 540px;
+  }
+  /* Header */
+  ul.nav {
+    font-size: 14px;
+  }
+  .hero {
+padding-bottom: 90px;
+}
+  /* About*/
+  .about {
+  padding: 50px 0;
+  }
+  .about-container{
     display: flex;
     flex-direction: column;
   }
-  /* HEADER */
-  ul.nav {
-    font-size: 12px;
-  }
-  /* ABOUT */
-  .about {
-    padding: 50px 0;
-  }
   .about-text {
-    width: 100%;
+    width: 100%;  
   }
   .about-text-title {
     font-size: 24px;
@@ -869,7 +885,15 @@ select {
   }
   .video-content {
     margin-top: 15px;
+    width: 450px;
+    height: auto;
   }
+  .video-btn {
+  width: 55px;
+  height: 55px;
+  left: 50%;
+  top: 50%;
+}
   /* Features */
   .feature-section {
     padding: 25px 0 0px;
@@ -898,10 +922,14 @@ select {
     width: 250px;
     display: flex;
   }
-  /* Aplication */
+  /* Application */
 
   .app-section {
     padding: 25px 0 25px;
+  }
+  .app-container{
+    display: flex;
+    flex-direction: column;
   }
   .wrap-text {
     width: 500px;
@@ -940,8 +968,11 @@ select {
   .footer {
     padding: 25px 0 25px;
   }
+  .footer-details{
+    flex-wrap: wrap;
+  }
   .footer-title {
-    padding-bottom: 25px;
+  padding-bottom: 25px;
   }
   .footer-info-text {
     font-size: 10px;
